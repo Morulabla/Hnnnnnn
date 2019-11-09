@@ -1,0 +1,37 @@
+html, body {
+ background-color: #ffbbda;
+}
+
+.top {
+    position:absolute; 
+        top: 50%;
+        left: 50%;
+     transform: translate(-50%, -50%);
+     opacity: 0.6;
+  filter: alpha(opacity=60);
+    animation: 
+    
+}
+
+.bottom {
+    width: 600px;
+    height: 600px;
+    opacity: 0.5;
+  filter: alpha(opacity=50);
+    position: absolute; 
+        top: calc(50% - 300px);
+        left: calc(50% - 300px);
+    animation: spin 80s linear infinite;
+    
+}
+
+.top:hover {
+  opacity: 1.0;
+    filter: alpha(opacity=100);
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to   { transform: rotate(360deg); }
+
+}
